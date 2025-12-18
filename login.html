@@ -12,24 +12,14 @@
   crossorigin="anonymous">
 
 
-  <style>
-    body {
-      padding: 20px;
-    }
 
-
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-  </style>
 </head>
 
 
-<body class="text-bg-dark">
+<body class="text-bg-dark text-light d-flex flex-column min-vh-100">
+<main class="flex-fill d-flex align-items-center justify-content-center">
   
-  
-  <div class="container">
+  <div class="container col-6">
   
     <h2 class="mb4 text-center">Inicio de sesión</h2>
   
@@ -48,10 +38,23 @@
       </div>
       <button type="submit" class="btn btn-primary w-100">Login</button>
     </form>
+    <br>
+    <div class="alert alert-info text-center">
+  <strong>Credenciales de prueba</strong><br>
+  Usuario: <b>correo@gmail.com</b><br>
+  Contraseña: <b>123123</b>
+</div>
   </div>
+  </main>
 
 <!-- hacemos un div aparte con un id de mensaje para mostrar la info de ingreso: correcto o no-->
 <div id="mensaje"></div>
+
+<!-- FOOTER -->
+<footer class="py-3 text-center text-secondary border-top border-secondary">
+    <small>
+    &copy; 2025 Bastian Molina Fernández. Todos los derechos reservados.
+    </small>
 
 
 <!-- CDN de jQuery -->
@@ -61,5 +64,8 @@
   crossorigin="anonymous"></script>
 <!-- Enlazar .js -->
 <script src="login.js"></script>
+
+    
+</footer>
 </body>
 </html>
